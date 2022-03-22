@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+// import './Data.js';
+import './index.css';
+// import data from './Data.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Track Info</h2>
+      <div className="container">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/2327/572327-h" alt="dawn" />
+        <h4>Bohemian Rhapsody</h4>
+        <p>Queen - Bohemian Rhapsody(The original soundtrack)</p>
+        <button >Select</button>
+      </div>
     </div>
   );
 }
