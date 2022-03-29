@@ -47,8 +47,9 @@ table{
     table-layout: 10%;
     border-collapse:collapse;-webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
-         box-shadow: 0 10px 6px -6px #777;
-
+        box-shadow: 0 10px 6px -6px #777;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -63,7 +64,7 @@ table{
     border-bottom:2px rgb(216, 159, 209) solid;      
 }
 h1 {
-    padding-top: 30px;
+    padding-top: 25px;
     color: #2b2b2b;
 }
 
@@ -80,21 +81,42 @@ p {
     color: #2b2b2b;
 }
 
-button {
-    width: 100px;
-    height: 37px;
+.BtnAccess {
+    width: 150px;
+    height: 40px;
     border: none;
-    border-radius: 10%;
+    margin-top: 25px;
+    border-radius: 5%;
     background-color: rgb(214, 166, 213);
     border-bottom: 3px solid rgb(104, 14, 104);
 }
-
+.BtnSubmit {
+    width: 70px;
+    height: 33px;
+    border: none;
+    /* margin-top: 30px; */
+    border-radius: 5%;
+    background-color: rgb(214, 166, 213);
+    border-bottom: 3px solid rgb(104, 14, 104);
+    margin-top: 30px;
+}
+input{
+    width: 500px;
+    height: 27px;
+    margin-top: 30px;
+}
 button:active {
     border-bottom: none;
     background-color: rgb(238, 200, 144);
+    cursor: pointer;
 }
 
 button:hover {
     border-bottom: none;
     background-color: rgb(228, 194, 147);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:#2b2b2b;
 }
