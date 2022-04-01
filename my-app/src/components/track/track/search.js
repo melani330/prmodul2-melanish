@@ -17,6 +17,8 @@ function Search() {
     const [token, setToken] = useState("")
     const [searchKey, setSearchKey] = useState("")
     const [tracks, setTracks] = useState([])
+    // const [status, setStatus] = useState(false)
+    // const [select, setSelect]= useState("")    
 
     useEffect(() => {
         const hash = window.location.hash
@@ -46,9 +48,23 @@ function Search() {
                 type: "track"
             }
         })
-
         setTracks(data.tracks.items)
     }
+
+    const ButtonUpdate = (e) =>{
+        e.preventDefault();
+        } 
+    
+    // const showAlert = () => {
+    //     setStatus(!status)
+    // }
+
+    // let Button;
+    // if (status === false){
+    //     Button= <button className="BtnChoose" onClick={showAlert}>Select</button>
+    // } else {
+    //     Button=<button className="BtnChooseDeselect" onClick={showAlert} >Deselect</button>
+    // }
 
     return (
         <div className="container">
@@ -62,7 +78,7 @@ function Search() {
                     
                 {token ?
                     <form onSubmit={searchTracks}>
-                        <input type="text" onChange={e => setSearchKey(e.target.value)}/>
+                        <input className="SearchInput" type="text" onChange={e => setSearchKey(e.target.value)}/>
                         <button className="BtnSubmit" type={"submit"}>Search</button>
                     </form>
                     : <h4>~ Please login ~</h4>
@@ -78,10 +94,11 @@ function Search() {
                             <th><h4>Artist</h4></th>
                             <th><h4>Album Title</h4></th>
                             <th><h4>Release Date</h4></th>
+                            <th><h4>Select</h4></th>
                         </tr>
                     </thead>
                     <tbody>
-                    {tracks.map((track) => {
+                    {tracks.map((track,) => {
                         return (
                         <tr className="bodyTable" key={track.id}>
                             <td>{track.album.images.length ? <img width={"100%"} src={track.album.images[0].url} alt=""/> : <div>No Image</div>}</td>
@@ -89,6 +106,12 @@ function Search() {
                             <td><p>{track.album.artists[0].name}</p></td>
                             <td><p>{track.album.name}</p></td>  
                             <td><p>{track.album.release_date}</p></td>
+                            <input  type="checkbox" id={`custom-checkbox-${track.id}`} onCheck={ButtonUpdate} />
+                            {/* <button onChange={ButtonUpdate} type="submit" id={`custom-submit-${track.id}`}>{Button}</button> */}
+                            {/* <div onChange={ButtonUpdate} type="submit" id={`custom-submit-${track.id}`}>{Button}</div> */}
+                            {/* <button className="BtnChoose" onChange={ButtonUpdate} type="submit"></button> */}
+                            {/* <button className="BtnChoose" >Select</button> */}
+                            {/* <button className="BtnChoose" type={"submit"}>Select</button>: <button className="BtnChoose" onClick={deselect}></button> */}
                         </tr>
                         )
                     })}
