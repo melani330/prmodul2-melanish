@@ -1,0 +1,60 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 192px;
+  background: radial-gradient( #d89766, #f7d8f8);
+  border-radius: 8px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.album-image {
+  width: 70%;
+  border-radius: 8px;
+}
+.description-container {
+  color: #2b2b2b;
+}
+.track-name {
+  font-weight: bold;
+  margin-top: 16px;
+}
+.artist-name {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.album-name {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.select-track-button {
+  width: 100%;
+  /* background-color: rgb(193, 150, 197); */
+  background-color: rgb(214, 152, 205);
+  border: none;
+  border-radius: 6px;
+  color: #2b2b2b;
+  border-bottom: 3px solid rgb(201, 112, 201);
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 8px 0;
+}
+.select-track-button:hover {
+  background-color: rgb(238, 189, 125);
+  border-bottom: none;
+}
+table{
+  border: 4px solid rgb(216, 159, 209) ;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  table-layout: 10%;
+  border-collapse:collapse;-webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+      box-shadow: 0 10px 6px -6px #777;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}

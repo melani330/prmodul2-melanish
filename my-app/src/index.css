@@ -6,15 +6,15 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: radial-gradient(circle at top left, #d89766, #d25cd8);
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     background-attachment: fixed;
-    display: flex;
+    /* display: flex; */
     /* margin-left: -35px !important;
     margin-bottom: 30px; */
 }
-
+/* 
 ul {
     list-style: none;
     flex: wrap;
@@ -54,7 +54,6 @@ table{
 }
 
 .container {
-    /* background-color: rgb(211, 187, 168); */
     text-align: center;
     margin-top: 10px;
     opacity: 0.9;
@@ -154,4 +153,4 @@ input[type="checkbox"]{
     display:inline-block;
     width:16px;
     height:16px;
-}
+} */
