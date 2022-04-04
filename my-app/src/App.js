@@ -1,15 +1,18 @@
 import './App.css';
 // import './Data.js';
 import React from 'react';
-// import './index.css';
 import Home from "./pages/home/index"
+import { Provider } from "react-redux";
+import store from "./redux/stores";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      {/* <Search/> */}
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Home />
+        {/* <Search/> */}
+      </div>
+    </Provider>
   );
 }
 
