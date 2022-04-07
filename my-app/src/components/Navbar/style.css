@@ -5,8 +5,11 @@
   .navbar-container a {
     font-size: 18px;
     font-weight: 600;
-    color: #2b2b2b;
+    color: #e7e1e1;
     text-decoration: none;
+  }
+  .navbar-container a:hover{
+    color: rgb(243, 221, 193);
   }
   li{
     list-style: none;

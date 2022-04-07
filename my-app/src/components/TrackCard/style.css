@@ -14,7 +14,7 @@
   border-radius: 8px;
 }
 .description-container {
-  color: #2b2b2b;
+  color: #712929e2;
 }
 .track-name {
   font-weight: bold;
@@ -22,12 +22,13 @@
 }
 .artist-name {
   margin-top: 2px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 400;
 }
 .album-name {
   margin-top: 8px;
   font-size: 14px;
+  font-weight: 500;
 }
 .select-track-button {
   width: 100%;
@@ -35,7 +36,7 @@
   background-color: rgb(214, 152, 205);
   border: none;
   border-radius: 6px;
-  color: #2b2b2b;
+  color: #f4f4f4;
   border-bottom: 3px solid rgb(201, 112, 201);
   cursor: pointer;
   font-weight: 600;
