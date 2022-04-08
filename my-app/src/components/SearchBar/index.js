@@ -1,13 +1,12 @@
 import "./style.css";
 import React from "react";
-const SearchBar = ({ handleInputSearch, handleSearch }) => {
+const SearchBar = ({handleInputSearch, handleSearch}) => {
     return (
         <form onSubmit={handleSearch}>
             <input
                 className="search-input"
                 placeholder="Search here"
-                onChange={handleInputSearch}
-            />
+                onChange={handleInputSearch}/>
             <button className="search-button" type="submit">
                 Search
             </button>

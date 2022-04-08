@@ -20,13 +20,18 @@ label{
 .create-playlist-input-group input,
 .create-playlist-input-group textarea {
     width: inherit;
-    padding: 4px 4px;
+    padding: 6px 8px;
     margin-top: 8px;
     font-family: inherit;
     font-size: 14px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     outline: none;
+}
+.create-playlist-input-group input:focus,
+.create-playlist-input-group textarea:focus{
+    padding: 4px 6px;
+    border: solid 2px rgba(201, 112, 201, 0.645);
 }
 .create-playlist button {
     width: 100%;

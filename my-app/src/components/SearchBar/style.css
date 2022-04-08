@@ -7,6 +7,11 @@
     margin-top: 16px;
     padding: 9px;
 }
+.search-input:focus{
+    padding: 7.2px;
+    border-radius: 5px 0 0 5px;
+    border: solid 2px rgba(201, 112, 201, 0.645);
+}
 .search-button {
     font-size: 14px;
     font-weight: 600;
