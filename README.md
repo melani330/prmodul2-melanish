@@ -12,3 +12,7 @@ Move the create playlist page URL to /create-playlist
 -Page Create Playlist
 ![image](https://user-images.githubusercontent.com/72775473/162230334-8c93e9bf-6cbe-46fa-bdb3-adadf2995048.png)
 
+Modul 5 Sesi 1
+Modify the exixting components, use flexbox and grid
+![image](https://user-images.githubusercontent.com/72775473/162788709-862e5265-bae1-40d5-98eb-5ac73684fd87.png)
+
