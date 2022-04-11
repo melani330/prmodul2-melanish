@@ -21,3 +21,12 @@
     padding: 9px;
     color: #f4f4f4;
 }
+@media screen and (max-width: 768px) {
+    .search-input {
+      width: 60%;
+      font-size: 14px;
+    }
+    .search-button {
+      font-size: 14px;
+    }
+  }

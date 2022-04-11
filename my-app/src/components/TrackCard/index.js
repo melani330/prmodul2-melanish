@@ -5,16 +5,24 @@ const TrackCard = ({trackName, album, artists, isSelected, onSelect}) => {
 
     return (
         <div className="card-container">
-            {/* <img className="album-image" src={album.images[0].url} alt={album.name} /> */}
-            <div className="description-container">
-                <img className="album-image" src={album.images[0].url} alt={album.name}/>
-                <div className="track-name">{trackName}</div>
-                <div className="artist-name">{artistsName}</div>
-                <div className="album-name">{album.name}</div>
-            </div>
-            <button className="select-track-button" onClick={onSelect}>
-                {isSelected ? "Deselect" : "Select"}
-            </button>
+            <table>
+                {/* <img className="album-image" src={album.images[0].url} alt={album.name} /> */}
+                <tr className="description-container">
+                    <td><img className="album-image" src={album.images[0].url} alt={album.name}/></td>
+                    <td>
+                        <div className="track-name">{trackName}</div>
+                        <div className="artist-name">{artistsName}</div>
+                        <div className="album-name">{album.name}</div>
+                        {/* </tr> */}
+
+                        <button className="select-track-button" onClick={onSelect}>
+                            {isSelected
+                                ? "Deselect"
+                                : "Select"}
+                        </button>
+                    </td>
+                </tr>
+            </table>
         </div>
     );
 };
