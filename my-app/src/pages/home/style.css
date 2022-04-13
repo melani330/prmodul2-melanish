@@ -21,14 +21,7 @@
     background-color: rgb(238, 189, 125);
     border-bottom: none;
 }
-/* .playlist-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
-    gap: 24px;
-} */
-.home-container{
-    display: flex;
-}
+
 h1{
     padding-bottom: 30px;
     color: #f4f4f4;

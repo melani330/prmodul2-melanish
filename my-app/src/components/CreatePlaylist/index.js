@@ -1,35 +1,54 @@
 import "./style.css";
 import React from "react";
+import TextField from '@mui/material/TextField';
+import { createTheme, ThemeProvider} from '@mui/material/styles';
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: "#7129299e",
+        },
+    },
+});
 const CreatePlaylist = ({handleInputCreatePlaylist, handleSubmitFormCreatePlaylist}) => {
     return (
+        <ThemeProvider theme={theme}>
         <div className="create-playlist">
             <h2 className="create-playlist-title">Create Playlist</h2>
             <form onSubmit={handleSubmitFormCreatePlaylist}>
                 <div className="create-playlist-input-group">
-                    <label htmlFor="title">Title</label>
-                    <input
+                    <TextField 
+                        id="title" 
+                        label="Add a title" 
+                        variant="filled" 
                         type="text"
-                        id="title"
                         name="title"
-                        minLength="10"
+                        color="primary"
+                        focused
+                        inputProps={{ minLength: 10 }}
+                        // minLength={10}
                         onChange={handleInputCreatePlaylist}
-                        placeholder="Add a title"
                         required/>
                 </div>
                 <div className="create-playlist-input-group">
-                    <label htmlFor="description">Description</label>
-                    <textarea
+                    <TextField
                         id="description"
                         name="description"
-                        minLength="20"
-                        rows="4"
+                        type="text"
+                        label="Add a description"
+                        rows={3}
+                        multiline
+                        variant="filled"
+                        color="primary"
+                        focused
+                        inputProps={{ minLength: 20 }}
                         onChange={handleInputCreatePlaylist}
-                        placeholder="Add a description"
                         required/>
                 </div>
                 <button type="submit">Create</button>
             </form>
         </div>
+        </ThemeProvider>
     // </div>
     );
 };

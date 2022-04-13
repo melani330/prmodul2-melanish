@@ -124,7 +124,9 @@ const Page = () => {
                     <h1 className="section-title">
                         Find Your Own Music
                     </h1>
-                    <SearchBar handleInputSearch={handleInputSearch} handleSearch={handleSearch}/>
+                    <SearchBar 
+                    handleInputSearch={handleInputSearch} 
+                    handleSearch={handleSearch}/>
                     <h2 className="sub-section-title">
                         {tracks.length > 0 && "Results"}
                     </h2>

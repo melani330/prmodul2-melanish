@@ -14,13 +14,13 @@ const TrackCard = ({trackName, album, artists, isSelected, onSelect}) => {
                         <div className="artist-name">{artistsName}</div>
                         <div className="album-name">{album.name}</div>
                         {/* </tr> */}
-
                         <button className="select-track-button" onClick={onSelect}>
                             {isSelected
                                 ? "Deselect"
                                 : "Select"}
                         </button>
                     </td>
+                    
                 </tr>
             </table>
         </div>

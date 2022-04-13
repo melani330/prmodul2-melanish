@@ -10,6 +10,7 @@
   }
   .navbar-container a:hover{
     color: rgb(243, 221, 193);
+    text-decoration: underline;
   }
   li{
     list-style: none;
