@@ -15,8 +15,14 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react", "@typescript-eslint"
     ],
     "rules": {
+        "react/prop-types": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "react/jsx-props-no-spreading": "off",
+        "import/no-unresolved": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }]
     }
 }

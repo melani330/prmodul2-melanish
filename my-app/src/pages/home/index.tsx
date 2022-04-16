@@ -1,5 +1,6 @@
 import {useEffect} from "react";
-import {useSelector, useDispatch} from "react-redux";
+// import {useSelector, useDispatch} from "react-redux";
+import { useAppSelector, useAppDispatch } from '../../redux/hooks';
 import {setToken} from "../../redux/actions/user";
 import {Redirect} from "react-router-dom";
 import queryString from "query-string";
@@ -12,14 +13,17 @@ import {AUTH_BASE_URL,
         REDIRECT_URI}
         from "../../constants/spotify";
 
-const Page = () => {
-    const token = useSelector((state) => state.user.token);
-    const dispatch = useDispatch();
+interface IParams {
+    access_token?: string;
+}
+function Page() {
+    const token = useAppSelector((state) => state.user.token);
+    const dispatch = useAppDispatch();
     const SPOTIFY_AUTH_URL = `${AUTH_BASE_URL}?response_type=${RESPONSE_TYPE}&client_id=${CLIENT_ID}&scope=${SCOPE}&redirect_uri=${REDIRECT_URI}`;
 
     useEffect(() => {
         if (window.location.hash) {
-            const params = queryString.parse(window.location.hash);
+            const params: IParams = queryString.parse(window.location.hash);
             window.location.hash = "";
             dispatch(setToken(params.access_token));
         }
