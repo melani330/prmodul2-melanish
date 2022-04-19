@@ -10,7 +10,7 @@ const theme = createTheme({
         },
     },
 });
-const CreatePlaylist = ({handleInputCreatePlaylist, handleSubmitFormCreatePlaylist}) => {
+const CreatePlaylist = ({ handleInputCreatePlaylist, handleSubmitFormCreatePlaylist}) => {
     return (
         <ThemeProvider theme={theme}>
         <div className="create-playlist">
@@ -26,7 +26,6 @@ const CreatePlaylist = ({handleInputCreatePlaylist, handleSubmitFormCreatePlayli
                         color="primary"
                         focused
                         inputProps={{ minLength: 10 }}
-                        // minLength={10}
                         onChange={handleInputCreatePlaylist}
                         required/>
                 </div>

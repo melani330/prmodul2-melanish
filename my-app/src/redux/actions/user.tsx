@@ -20,8 +20,4 @@ export function setUser(user: IUser) {
         payload: user,
     };
 }
-export function deleteUser() {
-    return {
-        type: DELETE_USER,
-    };
-}
+
