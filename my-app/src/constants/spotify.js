@@ -4,8 +4,8 @@ const RESPONSE_TYPE = "token";
 const CLIENT_ID = process.env.REACT_APP_SPOTIFY_API_KEY;
 const SCOPE = "playlist-modify-private";
 const REDIRECT_URI = process.env.NODE_ENV === 'production'
-    ? 'https://prmodul2-melanish-12dvscd48-melani330.vercel.app'
-    : 'http://localhost:3000';
+  ? 'https://prmodul2-melanish-melani330.vercel.app'
+  : 'http://localhost:3000';
 
 export {
     AUTH_BASE_URL,
