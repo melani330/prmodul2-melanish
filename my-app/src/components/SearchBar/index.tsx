@@ -26,7 +26,7 @@ const SearchBar = ({  handleSearch,handleInputSearch}:ISearchBarProps) => (
         <form className="search-bar" onSubmit={(searchQuery)=>handleSearch(searchQuery)}>
             <div className="text-field">
                 <TextField
-                        id="filled-search" 
+                        data-testid="filled-search" 
                         type="search"
                         className="textfield"
                         label="Search Music"

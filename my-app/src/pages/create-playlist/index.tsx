@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {notification} from 'antd';
-import {useAppSelector} from '../../redux/hooks';
+import {useAppSelector, useAppDispatch} from '../../redux/hooks';
 import axios from 'axios';
 import {API_BASE_URL} from '../../constants/spotify';
 import Navbar from '../../components/Navbar';
@@ -12,6 +12,7 @@ import React from 'react';
 import './style.css';
 
 const Page = () => {
+    const dispatch = useAppDispatch();
     const user = useAppSelector((state) => state.user);
     const [loading, setLoading] = useState(false);
     const [tracks, setTracks] = useState < Array < ITrack >> ([]);
