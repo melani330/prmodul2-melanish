@@ -1,13 +1,16 @@
 .create-playlist {
     margin-right: 24px;
     padding: 20px;
+    padding-bottom: 30px;
     border-radius: 8px;
     background: radial-gradient( #d89766, #f7d8f8);
 }   
 .create-playlist-title {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     color: #7129299e;
+    font-family: branch;
+    font-weight: 600;
 }
 label{
     color: #712929ea;
@@ -17,6 +20,7 @@ label{
     flex-direction: column;
     margin-bottom: 16px;
 }
+
 .create-playlist-input-group input,
 .create-playlist-input-group textarea {
     width: inherit;
@@ -31,7 +35,7 @@ label{
 }
 .create-playlist button {
     width: 100%;
-    padding: 8px 10px;
+    height: 37px;
     margin-top: 8px;
     font-weight: 600;
     border: none;
@@ -40,8 +44,24 @@ label{
     background-color: rgb(214, 152, 205);
     color: #f4f4f4;
     border-bottom: 3px solid rgb(201, 112, 201);
+    
 }
 .create-playlist button:hover {
     background-color: rgb(238, 189, 125);
     border-bottom: none;
+}
+.logo-playlist{
+    width:95%;
+}
+
+/* @media all and (max-width: 1000px) {
+    .logo-playlist{
+        width:90%;
+    }
+} */
+
+@media screen and (max-width: 730px) {
+    .logo-playlist{
+        width:188px;
+    }
 }

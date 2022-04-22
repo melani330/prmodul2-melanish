@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {StrictMode} from 'react';
+
 // ReactDOM.render(
 //   <React.StrictMode>
 //     <App />
@@ -11,9 +11,9 @@ import {StrictMode} from 'react';
 //   document.getElementById('root'),
 // );
 ReactDOM.render(
-  <StrictMode>
+  <React.StrictMode>
     <App />
-  </StrictMode>,
+  </React.StrictMode>,
   document.getElementById('root'),
 );
 

@@ -6,7 +6,7 @@ import {Redirect} from "react-router-dom";
 import queryString from "query-string";
 import React from "react";
 import "./style.css";
-import songs from "../../asset/img/song.png"
+import headpones from "../../asset/img/headphone.svg"
 import {AUTH_BASE_URL, 
         RESPONSE_TYPE, 
         CLIENT_ID, SCOPE, 
@@ -35,14 +35,16 @@ function Page() {
                 ? (<Redirect to="/create-playlist"/>)
                 : (
                     <div className="home-container">
-                        <h1>Create your own music playlist!</h1>
-                        <img src={songs} className="music-logo" alt="songs"/><br/>
+                        <h1 className="title">Music Playlist</h1>
+                        {/* <h4 className="subTitle">Create your own music playlist! </h4> */}
+                        <img src={headpones} className="music-logo" alt="songs"/><br/>
                         <a className="login-button" href={SPOTIFY_AUTH_URL}>
                             Login
                         </a>
                     </div>
                 )}
         </div>
+        
     );
 };
 export default Page;

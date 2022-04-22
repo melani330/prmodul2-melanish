@@ -4,7 +4,7 @@ import React from "react";
 
 test('Render a title in root component', () => {
   render(<App />);
-  const title = screen.getByText('Create your own music playlist!');
+  const title = screen.getByText('Music Playlist');
   expect(title).toBeInTheDocument();
 });
 

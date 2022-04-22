@@ -2,6 +2,7 @@ import "./style.css";
 import React from "react";
 import TextField from '@mui/material/TextField';
 import { createTheme, ThemeProvider} from '@mui/material/styles';
+import musics from "../../asset/img/music2.svg";
 
 const theme = createTheme({
     palette: {
@@ -15,6 +16,7 @@ const CreatePlaylist = ({ handleInputCreatePlaylist, handleSubmitFormCreatePlayl
         <ThemeProvider theme={theme}>
         <div className="create-playlist">
             <h2 className="create-playlist-title">Create Playlist</h2>
+            <img src={musics} className="logo-playlist" alt="songs"/>
             <form onSubmit={handleSubmitFormCreatePlaylist}>
                 <div className="create-playlist-input-group">
                     <TextField 

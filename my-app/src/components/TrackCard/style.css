@@ -1,8 +1,10 @@
 .card-container {
-  display: flex;
+  /* display: flex;
+  flex: none;
+  /* justify-content: space-around; */ 
+  float:left;
   flex-direction: column;
-  justify-content: space-between;
-  width: 340px;
+  width: 100%;
   background: radial-gradient( #d89766, #f7d8f8);
   border-radius: 8px;
   padding: 20px;
@@ -43,9 +45,8 @@
   border-bottom: 3px solid rgb(201, 112, 201);
   cursor: pointer;
   font-weight: 600;
+  height: 37px;
   margin-top: 16px;
-  padding: 8px 0;
-
 }
 .select-track-button:hover {
   background-color: rgb(238, 189, 125);
@@ -59,7 +60,7 @@ table{
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
   table {

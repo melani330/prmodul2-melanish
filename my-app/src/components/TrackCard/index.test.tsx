@@ -71,3 +71,11 @@ test('Button text in TrackCard component is Deselect', () => {
     const buttonElement = screen.getByTestId('track-card-button');
     expect(buttonElement.innerHTML).toBe('Deselect');
 });
+
+test('Calls onClick prop when clicked button in TrackCard component', () => {
+    const handleClick = jest.fn();
+    render(<TrackCard track={trackProps} isSelected onSelect={handleClick} />);
+    const buttonElement = screen.getByTestId('track-card-button');
+    fireEvent.click(buttonElement);
+    expect(handleClick).toHaveBeenCalledTimes(1);
+});

@@ -72,7 +72,7 @@ const Page = () => {
                 params: {
                     q: searchQuery,
                     type: 'track',
-                    limit: 12
+                    limit: 24
                 }
             }).then((response) => {
                 setTracks(response.data.tracks.items);
@@ -113,7 +113,8 @@ const Page = () => {
                         handleInputSearch ={handleInputSearch}
                         handleSearch={handleSearch}/>
                     <h2 className="sub-section-title">
-                        {tracks.length > 0 && "Results"}
+                        {/* {tracks.length > 0 && "Results"} */}
+                        {tracks.length > 0 }
                     </h2>
                     <div className="playlist-container">
                         {tracks.length > 0 && tracks.map((track) => (

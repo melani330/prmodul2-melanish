@@ -1,3 +1,19 @@
+@font-face {
+    font-family: angels;
+    src: url('../../asset/font/angels.ttf');
+}
+@font-face {
+    font-family: branch;
+    src: url('../../asset/font/Branch.ttf');
+}
+@font-face {
+    font-family: califor;
+    src: url('../../asset/font/californication.ttf');
+}
+@font-face {
+    font-family: muli;
+    src: url('../../asset/font/Muli.ttf');
+}
 .search-input {
     width: 40%;
     font-size: 15px;
@@ -22,9 +38,17 @@
     border-bottom: none;
 }
 
-h1{
-    padding-bottom: 30px;
+.title{
     color: #f4f4f4;
+    font-family: califor;
+    font-style: bold;
+    font-size: 60px;
+}
+.subTitle{
+    color: #f4f4f4;
+    padding-bottom: 30px;
+    font-family: branch;
+    font-weight: 900;
 }
 .music-logo{
     width: 250px;
@@ -35,24 +59,13 @@ h1{
     width: 100%;
     min-height: 100%;
 }
-.split-content-child-1 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: white;
-}
-/* .split-content-child-2 {
-    width: 100%;
-    margin-left: 24px;
-} */
 .login-button {
     font-size: 15px;
     border: none;
     border-radius: 4px 4px 4px 4px;
     cursor: pointer;
     color:#f4f4f4;
-    padding: 10px 30px;
+    padding: 12px 40px;
     text-decoration: none;
     font-weight: 600;
     background-color: rgb(214, 152, 205);
