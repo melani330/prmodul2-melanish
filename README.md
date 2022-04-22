@@ -47,6 +47,10 @@ git clone https://github.com/melani330/prmodul2-melanish.git
 npm start
 ```
 ## Dependencies
+* Axios
+```bash
+npm install axios
+```
 * Typescipt
 ```bash
 npm install --save typescript @types/node @types/react @types/react-dom @types/jest
@@ -71,5 +75,5 @@ npm install @mui/material @emotion/react @emotion/styled
 ```bash
 npm install --save-dev @testing-library/react
 ```
-## Server Priview
+## Server Preview
 [Click Here!](http://192.168.43.137:3000)
