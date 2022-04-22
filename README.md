@@ -1,25 +1,71 @@
-# prmodul2-melanish
- Modul 3 Sesi 3
- "Create Playlist Form"
-![image](https://user-images.githubusercontent.com/72775473/161421725-03d58664-e21d-4bb3-a480-905e68f6e737.png)
-in my spotify app was created a new playlist that i've been created in my react app
-![image](https://user-images.githubusercontent.com/72775473/161421820-812cb828-eb1d-4f2c-854a-c4a976618e8d.png)
-                                                                                                                                                                          
-Modul 4 Sesi 2
-Move the create playlist page URL to /create-playlist
--Page Login
-![image](https://user-images.githubusercontent.com/72775473/162229922-b0d2f280-c71a-4c01-a6fe-51dac8c28598.png)
--Page Create Playlist
-![image](https://user-images.githubusercontent.com/72775473/162230334-8c93e9bf-6cbe-46fa-bdb3-adadf2995048.png)
-                                                                                                                                                                          
-Modul 5 Sesi 1
-Modify the exixting components, use flexbox and grid
-![image](https://user-images.githubusercontent.com/72775473/162788709-862e5265-bae1-40d5-98eb-5ac73684fd87.png)
-                                                                                                                                                                          
-Modul 5 Sesi 2
-Modify search input, form create playlist into material UI component
-![image](https://user-images.githubusercontent.com/72775473/163139285-3ef04e0f-5c26-4900-8165-0780998b9b7a.png)
-                                                                                                                                                                          
-Modul 6 Sesi 1                                                                                                           
-Add test to my home and TrackCard components
-![image](https://user-images.githubusercontent.com/72775473/164027807-6a87d3a5-aad0-49aa-8bdd-1e66d6bd7716.png)
+# Final Project FE Melani Siti Hasanah
+This is a frontend final project to create a Spotify API playlist using react which was worked on during the generasi GIGIH 2.0.
+
+## App Layout
+
+### Login Authentification
+```bash
+![image](https://user-images.githubusercontent.com/72775473/164731107-329cf7f4-c7bd-4e3f-a967-46a5ae46b899.png)
+```
+### Main Page
+```bash
+![image](https://user-images.githubusercontent.com/72775473/164731700-e53ce3b0-9eca-4286-b1c7-268fca2b9157.png)
+```
+### Display User Profile
+```bash
+![image](https://user-images.githubusercontent.com/72775473/164736403-5f62ed9d-c85f-4889-9413-bb2bed04b9da.png)
+```
+## App Features
+* spotify authentication
+* search track song
+* display the track list of songs from the search results
+* choose a track for a playlist
+* make playlists for spotify
+* display user profile
+* scrolling track list
+* Notification Create Playlist
+* etc
+* 
+## React App Instalation and Running Project
+* Clone the project
+```bash
+git clone https://github.com/melani330/prmodul2-melanish.git
+```
+* Go to directory roject
+```bash
+# cd prmodul2-melanish
+# cd my-app
+```
+* Instal all dependencies bellow
+* Add environtment variable
+* Start the server with your browser
+```bash
+npm start
+```
+## Dependencies
+* Typescipt
+```bash
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+* Redux
+```bash
+npm install react-redux @reduxjs/toolkit
+```
+* Router
+```bash
+npm install react-router-dom@5.3.0
+```
+* Eslint
+```bash
+npm install eslint --save-dev
+```
+* Material UI
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+* React Testing Library
+```bash
+npm install --save-dev @testing-library/react
+```
+# Server Priview
+[Click Here!](http://192.168.43.137:3000)
