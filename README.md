@@ -27,7 +27,7 @@ This is a frontend final project to create a Spotify API playlist using react wh
 * scrolling track list
 * Notification Create Playlist
 * etc
-* 
+
 ## React App Instalation and Running Project
 * Clone the project
 ```bash
@@ -69,5 +69,5 @@ npm install @mui/material @emotion/react @emotion/styled
 ```bash
 npm install --save-dev @testing-library/react
 ```
-# Server Priview
+## Server Priview
 [Click Here!](http://192.168.43.137:3000)
