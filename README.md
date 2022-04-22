@@ -1,4 +1,6 @@
 # Final Project FE Melani Siti Hasanah
+
+## About
 This is a frontend final project to create a Spotify API playlist using react which was worked on during the generasi GIGIH 2.0.
 
 ## App Layout
