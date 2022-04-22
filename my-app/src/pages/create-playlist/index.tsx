@@ -44,7 +44,7 @@ const Page = () => {
             alert("You have successfully created a new playlist!");
             (e.target as HTMLFormElement).reset();
         } catch (error: any) {
-            if (error.response.status === 400 || error.response.status === 401) {
+            if (error.response.data.error.message === 'The access token expired') {
                 alert("There is something wrong, make sure you have been logged in!");
             }
         }
@@ -78,7 +78,7 @@ const Page = () => {
                 setTracks(response.data.tracks.items);
                 setLoading(false);
             }).catch((error) => {
-                if (error.response.status === 400 || error.response.status === 401) {
+                if (error.response.data.error.message === 'The access token expired') {
                     notification.error({message: 'Error', description: 'There is something wrong, make sure you have been logged in!'});
                 }
             });
