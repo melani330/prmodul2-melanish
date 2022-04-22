@@ -4,17 +4,19 @@ This is a frontend final project to create a Spotify API playlist using react wh
 ## App Layout
 
 ### Login Authentification
-```bash
+
 ![image](https://user-images.githubusercontent.com/72775473/164731107-329cf7f4-c7bd-4e3f-a967-46a5ae46b899.png)
-```
+
+![image](https://user-images.githubusercontent.com/72775473/164738697-2e68b699-d92c-4617-a269-69e25b206b8c.png)
+
 ### Main Page
-```bash
+
 ![image](https://user-images.githubusercontent.com/72775473/164731700-e53ce3b0-9eca-4286-b1c7-268fca2b9157.png)
-```
+
 ### Display User Profile
-```bash
+
 ![image](https://user-images.githubusercontent.com/72775473/164736403-5f62ed9d-c85f-4889-9413-bb2bed04b9da.png)
-```
+
 ## App Features
 * spotify authentication
 * search track song
