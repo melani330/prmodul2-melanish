@@ -1,79 +1,70 @@
-# Final Project FE Melani Siti Hasanah
+# Getting Started with Create React App
 
-## About
-This is a frontend final project to create a Spotify API playlist using react which was worked on during the generasi GIGIH 2.0.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## App Layout
+## Available Scripts
 
-### Login Authentification
+In the project directory, you can run:
 
-![image](https://user-images.githubusercontent.com/72775473/164731107-329cf7f4-c7bd-4e3f-a967-46a5ae46b899.png)
+### `npm start`
 
-![image](https://user-images.githubusercontent.com/72775473/164738697-2e68b699-d92c-4617-a269-69e25b206b8c.png)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Main Page
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-![image](https://user-images.githubusercontent.com/72775473/164731700-e53ce3b0-9eca-4286-b1c7-268fca2b9157.png)
+### `npm test`
 
-### Display User Profile
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![image](https://user-images.githubusercontent.com/72775473/164736403-5f62ed9d-c85f-4889-9413-bb2bed04b9da.png)
+### `npm run build`
 
-## App Features
-* spotify authentication
-* search track song
-* display the track list of songs from the search results
-* choose a track for a playlist
-* make playlists for spotify
-* display user profile
-* scrolling track list
-* Notification Create Playlist
-* etc
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## React App Instalation and Running Project
-* Clone the project
-```bash
-git clone https://github.com/melani330/prmodul2-melanish.git
-```
-* Go to directory roject
-```bash
-# cd prmodul2-melanish
-# cd my-app
-```
-* Instal all dependencies bellow
-* Add environtment variable
-* Start the server with your browser
-```bash
-npm start
-```
-## Dependencies
-* Axios
-```bash
-npm install axios
-```
-* Typescipt
-```bash
-npm install --save typescript @types/node @types/react @types/react-dom @types/jest
-```
-* Redux
-```bash
-npm install react-redux @reduxjs/toolkit
-```
-* Router
-```bash
-npm install react-router-dom@5.3.0
-```
-* Eslint
-```bash
-npm install eslint --save-dev
-```
-* Material UI
-```bash
-npm install @mui/material @emotion/react @emotion/styled
-```
-* React Testing Library
-```bash
-npm install --save-dev @testing-library/react
-```
-## Server Preview
-[Click Here!](http://192.168.43.137:3000)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
